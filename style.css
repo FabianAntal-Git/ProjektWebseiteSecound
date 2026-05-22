@@ -1,1 +1,170 @@
-﻿
+﻿body
+{
+    background-color:#d7d7d7;
+}
+
+header
+{
+    
+    height: 130px;
+    width: 100vw;
+    background-color:rgb(224, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+}
+
+h1
+{   display: flex;
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.NaviBut
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align:right;
+}
+
+.Navi
+{
+    display: None;
+
+}cent-2:#007bff
+}
+*{
+    box-sizing:border-box
+}
+
+body
+{
+    font-family:Arial, sans-serif; 
+    margin:0;
+}
+
+.site-header
+{   
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.75rem 1rem;
+    border-bottom: 2px solid #d7d7d7
+}
+
+.logo{
+    font-weight:700;
+    text-decoration:none;
+    color:var(--accent)
+}
+
+.burger{
+    background-image:url('/img/burger.svg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    min-width: 2rem;
+    min-height: 2rem;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:transparent;
+    padding:6px;
+    border:0;
+    cursor:pointer
+}
+
+
+
+.nav-menu{
+    position:absolute;
+    top:64px;
+    right:1rem;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:8px;
+    padding:0.5rem 0;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    width:200px;
+    transform-origin:top right;
+    opacity:0;
+    pointer-events:none;
+    transform:scale(.95);
+    transition:opacity .18s ease,transform .18s ease
+}
+
+.nav-menu ul{
+    list-style:none;
+    margin:0;
+    padding:0
+}
+
+.nav-menu li{
+    border-bottom:1px solid #f2f2f2
+}
+
+.nav-menu li:last-child{
+    border-bottom:0
+}
+
+.nav-menu a{
+    display:flex;
+    justify-content:center;
+    padding:.6rem 1rem;
+    color:var(--accent);
+    text-decoration:none
+}
+
+.nav-menu a:hover{
+    background:rgba(0,0,0,0.03)
+}
+
+.nav-menu.open{
+    opacity:1;
+    pointer-events:auto;
+    transform:scale(1.5)
+}
+
+/* Desktop layout */
+@media(min-width:760px){
+	.burger
+    {
+        display:none
+    }
+	.nav-menu
+    {
+        position:static;
+        display:block;
+        opacity:1;
+        pointer-events:auto;
+        transform:none;
+        box-shadow:none;
+        border:0;
+        padding:0;
+        width:auto
+    }
+
+	.nav-menu ul
+    {
+        display:flex;
+        gap:1rem
+    }
+	.nav-menu li
+    {
+        border:0
+    }
+	.nav-menu a
+    {
+        padding:.5rem 0
+    }
+}
+
+main{
+    padding:1rem
+}
+
