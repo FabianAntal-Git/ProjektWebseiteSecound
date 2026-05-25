@@ -18,7 +18,7 @@ header
     position:fixed;
     width:100vw;
     height:80px;
-    background-color:white;
+    background-color:transparent;
 }
 
 .flex-container
@@ -29,6 +29,7 @@ header
     display:flex;
     justify-content: center;
     flex-wrap:nowrap;
+
 }
 
 .Home-container
@@ -39,6 +40,7 @@ header
     justify-content:center;
     align-items:center;
     flex-wrap:nowrap;
+    background-color:white;
     border-right:2px solid black;
     border-bottom:2px solid black;
     border-left: 2px solid black;
@@ -51,7 +53,7 @@ header
     min-width: 20px;
     max-width:100px;
     height:80px;
-    background-color: green;
+    background-color:transparent;
 
 }
 
@@ -99,8 +101,8 @@ h1
     display: block;
     position: absolute;
     background-color: rgb(65, 114, 166);;
-    top: 4rem; 
-    right: 1.2rem;
+    top: 4rem;
+    right: 1%; 
     pointer-events: none;   
     cursor: default; 
     opacity: 0;
@@ -144,6 +146,7 @@ ul
     display: block;
     color: rgb(0, 0, 0);
     text-decoration: none;
+    text-align:center;
     padding: 20px 60px 20px 60px;
     font-size: 18px;
 }
