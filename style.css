@@ -15,63 +15,54 @@ body
 
 header
 {   
-    
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 180px;
-    width: 100vw;
-    background-image: url("/img/Wolken.png");
-    background-size: 1536px 1024px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 30% 100%; 
-    background-color: rgb(65, 114, 166);
-    padding: 0px;
-    margin: 0px;
-    border-bottom: 1px solid rgb(185, 183, 183);
+    position:fixed;
+    width:100vw;
+    height:80px;
+    background-color:white;
+}
+
+.flex-container
+{
+
+    max-width:1000vw;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
 }
 
 
 
+.translusent
+{   
+    display:flex;
+    flex-grow:1;
+    min-width: 20px;
+    max-width:100px;
+    height:80px;
+    background-color: green;
+
+}
+
+
+.spacer
+{
+    display:flex;
+    flex-grow:1;
+}
+
 h1
 {  
+    display:flex;
     font-family: Monsieur La Doulaise, cursive;
-    top: 10px;
     text-wrap:nowrap;
     color: rgb(0, 0, 0);
-    font-size: 80px;
-    margin: 30px 0px 0px 40px;
+    font-size: 50px;
     z-index:20;
    
 }
 
-.logo
-{
-    
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-   
-
-}
-
-
-
-.LogoImg
-{
-    display:flex;
-    position:absolute;
-    left: 7.7rem;
-    top: -3.5rem;
-    width: 240px;
-    height: 240px;
-    z-index: 15;
-   
-}
 
 .NaviBut-container
 {
@@ -80,11 +71,12 @@ h1
 
 .NaviBut
 {
-    Background-image: url("/img/burger.svg");
+    display:flex;
+    align-self:flex-end;
+    Background-image: url("./img/burger.svg");
     Background-size: contain;
     Background-repeat: no-repeat;
-    background-color: rgb(14, 74, 137);
-    margin: 0px 20px;
+    background-color:transparent;
     padding: 0px 0px;
     min-width: 60px;
     min-height: 60px;
@@ -155,10 +147,10 @@ ul
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 5px 0px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
-    z-index: 30;
+    z-index: 5;
 }
 
 h2
