@@ -108,11 +108,10 @@ h1
     cursor: default; 
     opacity: 0;
     max-height: 0;
-    max-width: 0;
     overflow: hidden;
     text-decoration: none;
     text-align:right;
-    transition: opacity 0.8s,max-width 0.5s, max-height 0.5s ease-in-out;
+    transition: max-height 0.5s,opacity 0.5s ease-in-out;
     
 }
 
@@ -120,8 +119,7 @@ h1
 {
     pointer-events: auto;
     opacity: 1;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 500px;
     cursor: pointer;      
 }
 
@@ -148,6 +146,7 @@ ul
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-align:center;
+    text-wrap:nowrap;
     padding: 20px 60px 20px 60px;
     font-size: 18px;
 }
@@ -191,6 +190,12 @@ h2
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+.img1
+{
+    display:flex;
+    width:100vw;
 }
 
 
