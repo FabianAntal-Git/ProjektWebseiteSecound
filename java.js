@@ -2,9 +2,6 @@
 	const burger = document.getElementById('NaviBut');
 	const nav = document.getElementById('Navi');
 	
-	
-
-
 	function toggleMenu()
 	{
 		const open = nav.classList.toggle('open');
@@ -16,10 +13,40 @@
 	
 });
 
+const slidesQ = document.querySelectorAll('.mySlides');
+const buttons = document.querySelectorAll('.dot');
+let slides = document.getElementsByClassName("mySlides");
+
+function ShowSlides(){
+buttons.forEach((button, indexButton) => {
+  
+  button.addEventListener('click', () => {
+     
+    // Remove "active" class from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add "active" class to the clicked button
+    button.classList.add('active');
+    slides[indexButton].style.display = "flex";
+
+    // Hide all other slides
+    buttons.forEach((btn, i) => {
+      if (i !== indexButton) {
+        slides[i].style.display = "none";
+      }
+    });
+    // Log the index of the clicked button
+    console.log(`${SlideIndex}`);
+    }); 
+  });
+}
 
 
 
-let slideIndex = 1;
+ShowSlides();
+
+
+/*
 showSlides(slideIndex);
 
 
@@ -41,7 +68,7 @@ function showSlides(n) {
   {
     slides[i].style.display = "none";
   }
-  
+
   for (i = 0; i < dots.length; i++) 
   {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -49,4 +76,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 }
-
+*/
