@@ -76,8 +76,12 @@ buttons.forEach((button, indexButton) => {
         slides[i].style.display = "none";
       }
     });
+
+    //set slideIndex after button use
+    slideIndex = indexButton;
+    
     // Log the index of the clicked button an active state
-      console.log(`${indexButton}`+' and '+`${button.classList.contains('active')}`);
+      console.log(`${indexButton}`+' and '+`${slideIndex}`);
     }); 
   });
 }

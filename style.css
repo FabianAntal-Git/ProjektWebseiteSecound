@@ -1,25 +1,20 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 *
 {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
-}
-
-body
-{       
-    background-color:#dad7d7;
-    width: 100vw;
 }
 
 header
 {   
-    display:none;
     position:fixed;
     width:100vw;
     height:150px;
     background-color:transparent;
     z-index:100;
 }
+
+
 
 .flex-container
 {
@@ -57,9 +52,7 @@ header
     display:none;
     font-family: Monsieur La Doulaise, cursive;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    
-   
+    transition: opacity 1s ease-in-out;   
 }
 
 
@@ -127,15 +120,34 @@ ul
     text-decoration:none;
 }
 
+body
+{     
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#505050;
+    width: 100vw;
+}
+
+main
+{     
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#505050;
+    width: 90vw;
+   
+}
 .section1
 {
     display:flex;
-    box-sizing:border-box;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-items:center;
+    width:90vw;
     margin: 0px 0px 5px 0px;
     background-color: rgb(255, 255, 255);
+    border-radius:2%;
 }
 
 .sectionAll
@@ -158,6 +170,7 @@ ul
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
+    border-radius: 2%;
     
 }
 
@@ -168,27 +181,32 @@ ul
     justify-content:flex-start;
     overflow:hidden;
     max-height: 300px;
-    margin: 0px 0px 5px 0px;
+    margin: 0px 10px 8px 10px;
     padding: 10px;
+    border-radius:2%;
     background-color: rgb(255, 255, 255);
+    
 
 }
 
 .productPicture
 {
-    width:400px;
-    height:300px;
-    margin: 0px 0px 0px 20px;
+    
+    max-width:250px;
+    max-height: 200px;
+    margin: 60px 0px 0px 20px;
 }
 
 .Speisekarte
 {
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
+    border-radius: 2%;
 }
 
 .DasTeam
@@ -199,6 +217,7 @@ ul
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
+    border-radius: 2%;
 }
 
 h1
@@ -223,24 +242,18 @@ p
  margin:0px 0px 0px 10px;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width:100vw;
-  position: relative;
-  margin: auto;
-}
+
 
 /* Hide the images by default */
 .mySlides {
   display:none;
-  visibility: visible;  
-  width:100%;  
+  visibility: visible; 
 }
 
 .img1
 {
     display:flex;
-    width:100vw;
+    width:90vw;
     height:400px;
 }
 
@@ -288,7 +301,7 @@ p
 .Home-container
 {
     display:flex;
-    height:80px;
+    height:120px;
     justify-content:center;
     align-items:center;
     flex-wrap:nowrap;
