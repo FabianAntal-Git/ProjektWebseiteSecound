@@ -13,6 +13,7 @@ body
 
 header
 {   
+    display:none;
     position:fixed;
     width:100vw;
     height:150px;
@@ -234,12 +235,6 @@ p
   display:none;
   visibility: visible;  
   width:100%;  
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .img1
