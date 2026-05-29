@@ -1,6 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
-*
-{
+*{
+    scroll-padding: 125px;
     margin: 0 ;
     padding: 0;
 }
@@ -135,12 +135,6 @@ main
 
 .Home
 {
-    width:120px;
-    background-color:transparent;
-}
-
-.section1
-{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -149,7 +143,7 @@ main
     max-height:60vw;
     margin: 125px 0px 5px 0px;
     background-color: rgb(255, 255, 255);
-    border-radius:2%;
+    
 }
 
 .sectionAll
@@ -171,7 +165,7 @@ main
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
-    border-radius: 2%; 
+    
 }
 
 .sectionProducts
@@ -203,7 +197,7 @@ main
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
-    border-radius: 2%;
+    
 }
 
 .DasTeam
@@ -214,7 +208,7 @@ main
     align-items: flex-start;
     margin: 0px 0px 5px 0px;
     background-color: rgb(22, 22, 22);
-    border-radius: 2%;
+    
 }
 
 h1
