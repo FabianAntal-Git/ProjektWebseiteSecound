@@ -4,14 +4,16 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "stylesheet" href="style.css">
-	<title>Dream Burger, Die beste Burgerkette in Ihrer näheren Umgebung</title>
+	<title>Burgers, Die beste Burgerkette in Ihrer näheren Umgebung</title>
 </head>
 	<header>	
 		<div class="flex-container">
-			<div class="translusent"></div>
+			<div class="translusent">
+				<input type="range" class="input" id="Schriftgroesse" min="18" max="52" value="18">
+			</div>
 			
 				<div class="Home-container">
-					<h1 class="Logo">Dream Burger</h1>
+					<div class="Logo">Burger's</div>
 					<div class="spacer"></div>
 
 					<div class="NaviBut-container">	
@@ -19,32 +21,47 @@
 							
 							<nav class="Navi" id="Navi">
 								<ul>
-									<li class="list-Item"><a class="NavText" href="#Specials" >Home</a></li>
-									<li class="list-Item"><a class="NavText" href="#NeusteRezepte" >Neuste Rezepte</a></li>
-									<li class="list-Item"><a  class="NavText" href="#Speisekarte">Speisekarte</a></li>
-									<li class="list-Item"><a class="NavText" href="#DasTeam">Das Team</a></li>
-									<li class="list-Item"><a class="NavText" href="#Impressum">Impressum</a></li>
+									<li class="list-Item"><a class="NavText" href="#Specials">Home</a></li>
+									<li class="list-Item"><a class="NavText" data-i18n="Nav_Rezepte" href="#NeusteRezepte">Neuste Rezepte</a></li>
+									<li class="list-Item"><a class="NavText" data-i18n="Nav_Speisekarte" href="#Speisekarte">Speisekarte</a></li>
+									<li class="list-Item"><a class="NavText" data-i18n="Nav_Team" href="#DasTeam">Das Team</a></li>
+									<li class="list-Item"><a class="NavText" data-i18n="Nav_Impressum" href="#Impressum">Impressum</a></li>
 								</ul>	
 							</nav>
 					</div>
 				</div>
 
-			<div class="translusent"></div>
+			<div class="translusent">
+				<nav class="page-navigation" id="page-navigation">
+        			<ul class="lang-list">
+						<li class="lingua"><img src="./img/DE_Symbol.jpg" class="lang_symbol"><a href="index.html" class="lingua-a" id="de" data-i18n="nav_german">DE</a></li>
+						<li class="lingua"><img src="./img/EN_Symbol.jpg" class="lang_symbol"><a href="index.html" class="lingua-a" id="en" data-i18n="nav_english">EN</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>			
 	</header>
 	<body>
+			<div id="disclaimer-popup" class="popup-overlay">
+				<div class="popup-content">
+					<h2 data-i18n="popup_datenschutz"></h2>
+					<p data-i18n="popup_datenschutz_inhalt"></p>
+					<p data-i18n="popup_datenschutz_inhalt2"></p>
+					<button data-i18n="popup_schliessen"></button>
+				</div>		
+			</div>
 		<main>
 			<section  class="Home" id="Specials">
 					<div class="mySlides fade" >
-					<img src="./img/Wolken.png" class="img1">
+						<img src="./img/BurgerSlide1.jpg" class="img1" alt="Tripple Jalapenos Burger">
 					</div>
 
 					<div class="mySlides fade" >
-					<img src="./img/HeadLogo1.png" class="img1">
+						<img src="./img/BurgerSlide2.jpg" class="img1" alt="Tripple Royal TS Burger">
 					</div>
 
 					<div class="mySlides fade" >
-					<img src="./img/Wolken.png" class="img1">
+						<img src="./img/BurgerSlide3.jpg" class="img1" alt="Tripple Salad Cheese Burger">
 					</div>
 
 					<!-- The dots/circles -->
@@ -55,39 +72,44 @@
 					</div>
 			</section>
 			<section class="Rezepte" id="NeusteRezepte">
-				<h1>Neuste Rezepte</h1>
+				<h1 data-i18n="page_title_Rezepte"></h1>
 					<section class="sectionProducts">
-						<img class="productPicture"src="./img/Wolken.png" alt="Eisburger mit 3 Sorten es kann Soja oder Milchprodukte enthalten">
-							<div>
-								<h2>Wolken</h2>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-							</div>
+						<img class="productPicture" src="./img/Burger1.webp" alt="Rindfleisch Burger Deluxe">
+							<section class="Description">
+								<h2 data-i18n="page_subtitle_Specials_1"></h2>
+								<p data-i18n="page_description_Specials_1"></p>
+							</section>
 					</section>
-			<section class="sectionProducts">
-					<div>
-						<h2>Wolken</h2>
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-					</div>
-					<img class="productPicture"src="./img/Wolken.png" alt="Eisburger mit 3 Sorten es kann Soja oder Milchprodukte enthalten">
-			</section>
+					<section class="sectionProducts">
+							<section class="Description">
+								<h2 data-i18n="page_subtitle_Specials_2"></h2>
+								<p data-i18n="page_description_Specials_2"></p>
+							</section>
+							<img class="productPicture"src="./img/Burger2.webp" alt="Pulled Pork Burger">
+					</section>
 			</section>
 
 			<section  class="Speisekarte" id="Speisekarte" >
-				<h1>Speisekarte</h1>	
-				<section class="sectionProducts">
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+				<h1 data-i18n="page_title_Speisekarte"></h1>	
+				<section class="sectionSpeisekarte">
+					<p data-i18n="page_description_Speisekarte"></p>
+					<img src="./img/Speisekarte.jpg" class="img1"alt="Speisekarte">
 				</section>
 		</section>
 			<section  class="DasTeam" id="DasTeam">
-			<h1>Das Team</h1>
-			<section class="sectionProducts">
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+			<h1 data-i18n="page_title_Team"></h1>
+			<section class="sectionDasTeam">
+				<p data-i18n="page_description_Team"></p>
+				<img src="./img/Das_Team.jpg" class="img1"alt="Das Team">
 			</section>
 		</section>
 	</main>
 
-	<footer>	
+	<footer>
+			<section  class="Impressum" id="Impressum">
+				<h3>Fabian Antal @ DEKRA Günzburg</h3>
+			</section>
 	</footer>
 </body>
-	<script src="java.js"></script>
+	<script src="java.js" defer></script>
 </html>
